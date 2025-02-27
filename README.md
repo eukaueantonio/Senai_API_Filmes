@@ -10,11 +10,11 @@ Bem-vindo ao **MovieAPI**, um projeto de API simples para cadastro e gerenciamen
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Linguagem**: [Nome da linguagem] (ex: Python, JavaScript)
-- **Framework**: [Nome do framework] (ex: FastAPI, Express.js)
-- **Banco de Dados**: [Banco usado] (ex: PostgreSQL, MySQL, MongoDB)
-- **ORM (se usado)**: (ex: SQLAlchemy, Prisma)
-- **Ferramentas Auxiliares**: (ex: Docker, Postman)
+- **Linguagem**: C# e SQL
+- **Framework**: ASP.NET Core e Entity Framework Core (EF Core)
+- **Banco de Dados**: SQL Server
+- **ORM (se usado)**: Entity Framework Core (EF Core)
+- **Ferramentas Auxiliares**: Postman
 
 ## 🚀 Como Rodar o Projeto
 
