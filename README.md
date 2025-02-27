@@ -22,24 +22,7 @@ Bem-vindo ao **MovieAPI**, um projeto de API simples para cadastro e gerenciamen
    ```sh
    git clone https://github.com/eukaueantonio/Senai_API_Filmes.git
    ```
-2. Entre na pasta do projeto:
-   ```sh
-   cd movieapi
-   ```
-3. Instale as dependências:
-   ```sh
-   [Comando para instalar dependências] (ex: npm install, pip install -r requirements.txt)
-   ```
-4. Configure o banco de dados e as variáveis de ambiente:
-   ```sh
-   [Instruções para configurar .env]
-   ```
-5. Rode a API:
-   ```sh
-   [Comando para rodar a API] (ex: npm start, uvicorn main:app --reload)
-   ```
-6. Acesse a documentação interativa (se houver):
-   - [http://localhost:porta/docs](http://localhost:porta/docs) (Exemplo: Swagger)
+2. Abra o Visual Studio Community e acesse o projeto ou uma solução
 
 ## 🔥 Exemplos de Rotas
 
@@ -74,20 +57,6 @@ Bem-vindo ao **MovieAPI**, um projeto de API simples para cadastro e gerenciamen
   GET /generos
   ```
 
-## 📄 Estrutura do Projeto
-
-```
-/movieapi
-│-- src/
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   ├── database/
-│-- tests/
-│-- README.md
-│-- .env.example
-│-- requirements.txt / package.json
-```
 
 ## 🤝 Contribuindo
 
