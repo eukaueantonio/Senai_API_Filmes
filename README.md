@@ -20,7 +20,7 @@ Bem-vindo ao **MovieAPI**, um projeto de API simples para cadastro e gerenciamen
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/eukaueantonio/Senai_API_Filmes.git
    ```
 2. Entre na pasta do projeto:
    ```sh
