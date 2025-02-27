@@ -22,7 +22,8 @@ Bem-vindo ao **MovieAPI**, um projeto de API simples para cadastro e gerenciamen
    ```sh
    git clone https://github.com/eukaueantonio/Senai_API_Filmes.git
    ```
-2. Abra o Visual Studio Community e acesse o projeto ou uma solução
+2. Abra o Visual Studio Community 2022 e acesse o projeto ou uma solução.
+3. Clique em cima do projeto/solução no Gerenciador de Soluções que está localizado ao lado direito da tela, caso não tiver exibindo use o atalho CTRL + ALT + L para exibir o Gerenciador de Soluções e enfim clique em F5 para fazer a depuração.
 
 ## 🔥 Exemplos de Rotas
 
