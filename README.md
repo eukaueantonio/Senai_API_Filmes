@@ -13,7 +13,7 @@ Bem-vindo ao **MovieAPI**, um projeto de API simples para cadastro e gerenciamen
 - **Linguagem**: C# e SQL
 - **Framework**: ASP.NET Core e Entity Framework Core (EF Core)
 - **Banco de Dados**: SQL Server
-- **ORM (se usado)**: Entity Framework Core (EF Core)
+- **ORM**: Entity Framework Core (EF Core)
 - **Ferramentas Auxiliares**: Postman
 
 ## 🚀 Como Rodar o Projeto
