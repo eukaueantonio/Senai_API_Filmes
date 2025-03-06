@@ -1,5 +1,6 @@
 ﻿using API_Filmes_SENAI.Domains;
 using API_Filmes_SENAI.Interfaces;
+using API_Filmes_SENAI.NovaPasta;
 using API_Filmes_SENAI.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +19,7 @@ namespace API_Filmes_SENAI.Controllers
             _usuarioRepository = usuarioRepository;
         }
         [HttpPost]
-        public IActionResult Post(Usuario usuario) 
+        public IActionResult Post(Usuario usuario)
         {
             try
             {
@@ -32,5 +33,26 @@ namespace API_Filmes_SENAI.Controllers
                 return BadRequest(error.Message);
             }
         }
+        //BuscarPorId
+        [HttpGet("{id}")]
+        public IActionResult GetById(Guid id) 
+        {
+            try
+            {
+                Usuario usuario = _usuarioRepository.BuscarPorId(id);
+                if (usuario != null)
+                {
+                    return Ok(usuario);
+                }
+                return null!;
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        
+        }
+
     }
 }
