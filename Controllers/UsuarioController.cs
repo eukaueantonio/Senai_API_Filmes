@@ -2,6 +2,7 @@
 using API_Filmes_SENAI.Interfaces;
 using API_Filmes_SENAI.NovaPasta;
 using API_Filmes_SENAI.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +19,7 @@ namespace API_Filmes_SENAI.Controllers
         {
             _usuarioRepository = usuarioRepository;
         }
+        [Authorize]
         [HttpPost]
         public IActionResult Post(Usuario usuario)
         {

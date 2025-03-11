@@ -9,6 +9,7 @@ namespace API_Filmes_SENAI.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Produces("application/json")]
+    [Authorize]
     public class GeneroController : ControllerBase
     {
         private readonly IGeneroRepository _generoRepository;
@@ -41,8 +42,9 @@ namespace API_Filmes_SENAI.Controllers
         /// </summary>
         /// <param name="id">Id do Gênero buscado</param>
         /// <returns>Gênero Buscado</returns>
-        [HttpPost]
 
+        [Authorize]
+        [HttpPost]
         public IActionResult Post(Genero novoGenero)
         {
             try
@@ -81,6 +83,7 @@ namespace API_Filmes_SENAI.Controllers
         /// </summary>
         /// <param name="id">Id do Gênero buscado</param>
         /// <returns>Gênero Buscado</returns>
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult DeleteById(Guid id)
         {
@@ -101,6 +104,7 @@ namespace API_Filmes_SENAI.Controllers
         /// <param name="id">Id do Gênero buscado</param>
         /// <param name="genero">Nome do Gênero buscado</param>
         /// <returns>Gênero Buscado</returns>
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Genero genero)
         {

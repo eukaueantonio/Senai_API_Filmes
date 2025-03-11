@@ -1,6 +1,7 @@
 ﻿using API_Filmes_SENAI.Domains;
 using API_Filmes_SENAI.Interfaces;
 using API_Filmes_SENAI.NovaPasta;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,6 +33,7 @@ namespace API_Filmes_SENAI.Controllers
                 return BadRequest(e.Message);
             }
         }
+        [Authorize]
         [HttpPost]
         public IActionResult Post(Filme novoFilme)
         {
@@ -61,6 +63,7 @@ namespace API_Filmes_SENAI.Controllers
                 return BadRequest(e.Message);
             }
         }
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult DeleteById(Guid id)
         {
@@ -75,6 +78,7 @@ namespace API_Filmes_SENAI.Controllers
                 throw;
             }
         }
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult Put(Guid id, Filme filme)
         {
